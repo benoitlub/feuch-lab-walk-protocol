@@ -1,0 +1,12 @@
+{
+  "name": "Feuch Lab Institute — Dr. Marty's Walk Protocol",
+  "short_name": "Marty Walk",
+  "description": "A playful patent-inspired walking experiment from the Feuch Lab Institute.",
+  "start_url": "/feuch-lab-walk-protocol/",
+  "scope": "/feuch-lab-walk-protocol/",
+  "display": "standalone",
+  "background_color": "#07100b",
+  "theme_color": "#07100b",
+  "orientation": "portrait-primary",
+  "categories": ["entertainment", "education"]
+}
