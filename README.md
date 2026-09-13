@@ -1,4 +1,4 @@
-# FEUCH LAB INSTITUTE — Dr. Marty's Walk Protocol
+# FEUCH LAB INSTITUTE — Dr. Marty's Walk Protocol v0.1
 
 **FLI-MW-06 — Experimental Dimensional Locomotion System**
 
