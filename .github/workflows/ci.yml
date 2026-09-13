@@ -14,5 +14,17 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: npm run typecheck
+      - name: Typecheck
+        id: typecheck
+        continue-on-error: true
+        run: npm run typecheck 2>&1 | tee typecheck.log
+      - name: Upload diagnostics
+        if: steps.typecheck.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: typecheck-diagnostics
+          path: typecheck.log
+      - name: Fail on type errors
+        if: steps.typecheck.outcome == 'failure'
+        run: exit 1
       - run: npm run build
