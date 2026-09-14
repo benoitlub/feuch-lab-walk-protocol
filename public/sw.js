@@ -1,5 +1,5 @@
-const CACHE = 'feuch-lab-walk-v1';
-const ROOT = '/feuch-lab-walk-protocol/';
+const CACHE = 'feuchlab-v2';
+const ROOT = '/feuchlab/';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.add(ROOT)));
