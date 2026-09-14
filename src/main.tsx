@@ -6,6 +6,7 @@ import './app-shell.css';
 import './octopus.css';
 import './silent-link.css';
 import './ghost-frame.css';
+import './instant.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode><LabRoot /></React.StrictMode>,
