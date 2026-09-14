@@ -5,17 +5,14 @@ import './styles.css';
 import './app-shell.css';
 import './octopus.css';
 import './silent-link.css';
+import './ghost-frame.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <LabRoot />
-  </React.StrictMode>,
+  <React.StrictMode><LabRoot /></React.StrictMode>,
 );
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/feuchlab/sw.js').catch(() => {
-      // Offline support is optional; the experiment remains usable online.
-    });
+    navigator.serviceWorker.register('/feuchlab/sw.js').catch(() => { /* offline support is optional */ });
   });
 }
