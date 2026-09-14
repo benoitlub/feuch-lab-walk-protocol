@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import LabRoot from './LabRoot';
 import './styles.css';
 import './app-shell.css';
 import './octopus.css';
+import './silent-link.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <LabRoot />
   </React.StrictMode>,
 );
 
