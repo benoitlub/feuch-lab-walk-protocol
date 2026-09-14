@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/feuch-lab-walk-protocol/sw.js').catch(() => {
+    navigator.serviceWorker.register('/feuchlab/sw.js').catch(() => {
       // Offline support is optional; the experiment remains usable online.
     });
   });
