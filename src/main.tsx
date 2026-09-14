@@ -8,6 +8,7 @@ import './silent-link.css';
 import './ghost-frame.css';
 import './instant.css';
 import './training.css';
+import './pineal.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode><LabRoot /></React.StrictMode>,
